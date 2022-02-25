@@ -91,5 +91,39 @@ public class ParMainTest {
         assertEquals(expResult, result);
     }
     
+    /**
+     * Test of verificaPar method, of class ParMain para o cerp
+     */
+    @Test
+    public void testVerificaParCero() {
+        System.out.println("verificaPar do cero");
+        int numeroProba = 0;
+        //boolean resultadoEsperado = true;
+        assertTrue (ParMain.verificaPar(numeroProba));
+        
+    }
+    
+    /**
+     *  Test do método VerificaPar para un número par positivo
+     */
+    @Test
+    public void testVerificaParNumPar() {
+        System.out.println("verificaPar do 10");
+        int numeroProba = 10;
+        //boolean resultadoEsperado = true;
+       assertTrue (ParMain.verificaPar(numeroProba));
+    }
+    
+    /**
+     *Test do método VerificaPar para un número impar positivo
+     */
+    @Test
+    public void testVerificaParNumImpar() {
+        System.out.println("verificaPar do 11");
+        int numeroProba = 11;
+        //boolean resultadoEsperado = false;
+       assertFalse (ParMain.verificaPar(numeroProba));
+    }
+    
     
 }

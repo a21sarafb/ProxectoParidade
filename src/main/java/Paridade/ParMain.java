@@ -32,7 +32,7 @@ public class ParMain {
      */
     static String comprobarParidade(int numeroProba) {
         String resultado;
-        if(numeroProba%2==0){
+        if(verificaPar(numeroProba)){
             resultado=(O_NUMERO_E_PAR);
         }else{
             resultado=(O_NUMERO_E_IMPAR);
@@ -41,7 +41,7 @@ public class ParMain {
     }
     /**
      * Verifica se numeroProba é par
-     * @param numeroProba
+     * @param numeroProba número enteiro a comprobar
      * @return booleano con valor true se o número é par
      */
     static boolean verificaPar(int numeroProba){
