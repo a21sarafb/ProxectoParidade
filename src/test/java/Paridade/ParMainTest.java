@@ -9,11 +9,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Disabled;
 
 /**
- *
+ * Probas unitarias da clase ParMain
  * @author saraf
  */
 public class ParMainTest {
     
+    /**
+     * Constructor por defecto
+     */
     public ParMainTest() {
     }
 
@@ -26,12 +29,10 @@ public class ParMainTest {
         System.out.println("main");
         String[] args = null;
         ParMain.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
     }
 
     /**
-     * Test of comprobarParidade method, of class ParMain.
+     * Test of comprobarParidade method, of class ParMain para o número 0.
      */
     @Test
     public void testComprobarParidadeCero() {
@@ -42,6 +43,9 @@ public class ParMainTest {
         assertEquals(expResult, result);
     }
     
+    /**
+     * Test of comprobarParidade method, of class ParMain para o número par positivo.
+     */
     @Test
     public void testComprobarParidadeParPositivo() {
         System.out.println("comprobarParidade do 2");
@@ -51,6 +55,9 @@ public class ParMainTest {
         assertEquals(expResult, result);
     }
     
+    /**
+     * Test of comprobarParidade method, of class ParMain para o número impar positivo.
+     */
     @Test
     public void testComprobarParidadeImparPositivo() {
         System.out.println("comprobarParidade do 1");
@@ -60,6 +67,9 @@ public class ParMainTest {
         assertEquals(expResult, result);
     }
     
+    /**
+     * Test of comprobarParidade method, of class ParMain para o número impar negativo.
+     */
     @Test
     public void testComprobarParidadeImparNegativo() {
         System.out.println("comprobarParidade do -1");
@@ -69,6 +79,9 @@ public class ParMainTest {
         assertEquals(expResult, result);
     }
     
+    /**
+     * Test of comprobarParidade method, of class ParMain para o número par negativo.
+     */
     @Test
     public void testComprobarParidadeParNegativo() {
         System.out.println("comprobarParidade do -2");
@@ -77,5 +90,6 @@ public class ParMainTest {
         String result = ParMain.comprobarParidade(numeroProba);
         assertEquals(expResult, result);
     }
+    
     
 }
